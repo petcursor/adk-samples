@@ -20,18 +20,27 @@ export function WelcomeScreen({
       {/* The "Card" Container */}
       {/* This div now holds the card's styling: background, blur, padding, border, shadow, and hover effect */}
       <div className="w-full max-w-2xl z-10
-                      bg-neutral-900/50 backdrop-blur-md 
+                      bg-black backdrop-blur-md 
                       p-8 rounded-2xl border border-neutral-700 
                       shadow-2xl shadow-black/60 
                       transition-all duration-300 hover:border-neutral-600">
         
         {/* Header section of the card */}
         <div className="text-center space-y-4">
+          {/* PwC Logo */}
+          <div className="flex justify-center mb-4">
+            <img 
+              src="/app/pwc-logo.png" 
+              alt="PwC Logo" 
+              className="max-w-full max-h-32 object-contain"
+            />
+          </div>
+          
           <h1 className="text-4xl font-bold text-white flex items-center justify-center gap-3">
-            ✨ Gemini FullStack - ADK 🚀
+            Innovate Deep Research Agent 
           </h1>
-          <p className="text-lg text-neutral-300 max-w-md mx-auto">
-            Turns your questions into comprehensive reports!
+          <p className="text-sm text-neutral-300 max-w-md mx-auto">
+            Transform your business questions into comprehensive, professional research reports with AI-powered insights.
           </p>
         </div>
 
